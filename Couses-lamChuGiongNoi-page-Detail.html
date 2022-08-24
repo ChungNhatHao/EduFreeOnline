@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Home -EduFree</title>
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	<link rel="stylesheet" type="text/css" href="libraries/Stroke-Gap-Icon/stroke-gap-icon.css">
+	
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,900,300,300italic,500,700' rel='stylesheet' type='text/css'>	
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Niconne' rel='stylesheet' type='text/css'>
+	
+	
+	<!-- Custom - Common CSS -->
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	
+	<!-- Custom - Theme CSS -->	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		ul { list-style-type: none; }
+
+		a {
+		  color: #b63b4d;
+		  text-decoration: none;
+		}
+
+		/** =======================
+		 * Contenedor Principal
+		 ===========================*/
+
+
+		h1 {
+		  color: #FFF;
+		  font-size: 24px;
+		  font-weight: 400;
+		  text-align: center;
+		  margin-top: 80px;
+		}
+
+		h1 a {
+		  color: #c12c42;
+		  font-size: 16px;
+		}
+
+		.accordion {
+		  width: 100%;
+		  max-width: 360px;
+		  margin: 30px auto 20px;
+		  background: #FFF;
+		  -webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  border-radius: 4px;
+		}
+
+		.accordion .link {
+		  cursor: pointer;
+		  display: block;
+		  padding: 15px 15px 15px 42px;
+		  color: #4D4D4D;
+		  font-size: 14px;
+		  font-weight: 700;
+		  border-bottom: 1px solid #CCC;
+		  position: relative;
+		  -webkit-transition: all 0.4s ease;
+		  -o-transition: all 0.4s ease;
+		  transition: all 0.4s ease;
+		}
+
+		.accordion li:last-child .link { border-bottom: 0; }
+
+		.accordion li i {
+		  position: absolute;
+		  top: 16px;
+		  left: 12px;
+		  font-size: 18px;
+		  color: #595959;
+		  -webkit-transition: all 0.4s ease;
+		  -o-transition: all 0.4s ease;
+		  transition: all 0.4s ease;
+		}
+
+		.accordion li i.fa-chevron-down {
+		  right: 12px;
+		  left: auto;
+		  font-size: 16px;
+		}
+
+		.accordion li.open .link { color: #b63b4d; }
+
+		.accordion li.open i { color: #b63b4d; }
+
+		.accordion li.open i.fa-chevron-down {
+		  -webkit-transform: rotate(180deg);
+		  -ms-transform: rotate(180deg);
+		  -o-transform: rotate(180deg);
+		  transform: rotate(180deg);
+		}
+
+		/**
+		 * Submenu
+		 -----------------------------*/
+
+
+		.submenu {
+		  display: none;
+		  background: #444359;
+		  font-size: 14px;
+		}
+
+		.submenu li { border-bottom: 1px solid #4b4a5e; }
+
+		.submenu a {
+		  display: block;
+		  text-decoration: none;
+		  color: #d9d9d9;
+		  padding: 12px;
+		  padding-left: 42px;
+		  -webkit-transition: all 0.25s ease;
+		  -o-transition: all 0.25s ease;
+		  transition: all 0.25s ease;
+		}
+
+		.submenu a:hover {
+		  background: #b63b4d;
+		  color: #FFF;
+		}
+	</style>
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<!-- LOADER -->
+	<div id="site-loader" class="load-complete">
+		<div class="loader">
+			<div class="loader-inner ball-clip-rotate">
+				<div></div>
+			</div>
+		</div>
+	</div><!-- Loader /- -->	
+	<!-- Header -->
+	<header class="header-main container-fluid no-padding">
+		<!-- Top Header -->
+		<div class="top-header container-fluid no-padding">
+			<div class="container">
+				<div class="topheader-left">
+					<a href="tel:+5198759822" title="5198759822"><i class="fa fa-mobile" aria-hidden="true"></i>(84) - 969929983 </a>
+					<a href="mailto:haocn@mor.com.vn" title="haocn@mor.com.vn"><i class="fa fa-envelope-o" aria-hidden="true"></i>Emailus: haocn@mor.com.vn</a>
+				</div>
+				<div class="topheader-right">
+					<a href="#" title="Login"><i class="fa fa-sign-out" aria-hidden="true"></i>Đăng Nhập</a>
+					<a href="#" title="Register">Đăng ký</a>
+				</div>
+			</div>
+		</div><!-- Top Header /- -->
+		
+		<!-- Menu Block -->
+		<div class="menu-block container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="row">
+					<!-- Navigation -->
+					<nav class="navbar ow-navigation">
+						<div class="col-md-3">
+							<div class="navbar-header">
+								<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a title="Logo" href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo"/>EduFree<span>Khóa Học Tốt Nhất - Miễn Phí</span></a>
+								<a title="Logo" href="#" class="navbar-brand">
+									<span class="ftr-widget newsletter_widget input-group input-group-btn"><button class="btn" type="button" title="Go">Đăng ký</button></span>
+								</a>
+								<a href="index.html" class="mobile-logo" title="Logo"><h3>EduFree</h3></a>
+								<a href="#" class="mobile-logo">
+									<span class="ftr-widget newsletter_widget input-group input-group-btn mobile-logo"><button class="btn" type="button" title="Go">Đăng ký</button></span>
+								</a>
+								
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="navbar-collapse collapse" id="navbar">
+								<ul class="nav navbar-nav menubar">
+									<li class="dropdown active">
+										<a aria-expanded="false" aria-haspopup="true" href="index.html" role="button" class="dropdown-toggle" title="Home">Trang Chủ</a>
+										<i class="ddl-switch fa fa-angle-down"></i>
+										<ul class="dropdown-menu">
+											<li><a title="Home 2" href="home2.html">Home 2</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Courses" href="courses-page.html">Khóa Học</a>
+										<i class="ddl-switch fa fa-angle-down"></i>
+										<ul class="dropdown-menu">
+											<li><a title="Courses Detail" href="coursesdetails-page.html">Courses Detail</a></li>
+										</ul>
+									</li>
+									<li><a title="Event" href="events-page.html">Sự Kiện</a></li>
+									<li><a title="About" href="about-page.html">Giới Thiệu</a></li>
+									<li class="dropdown">
+										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Blog" href="blog-page.html">Blog</a>
+										<i class="ddl-switch fa fa-angle-down"></i>
+										<ul class="dropdown-menu">
+											<li><a title="Blog Post" href="blogpost-page.html">Blog Post</a></li>
+										</ul>
+									</li>
+									<li class="dropdown">
+										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Pages" href="#">Trang</a>
+										<i class="ddl-switch fa fa-angle-down"></i>
+										<ul class="dropdown-menu">
+											<li><a title="Home 2" href="home2.html">Home 2</a></li>
+											<li><a title="Course Detail" href="coursesdetails-page.html">Course Detail</a></li>
+											<li><a title="BlogPost" href="blogpost-page.html">BlogPost</a></li>
+										</ul>
+									</li>
+									<li><a title="Contact" href="contactus-page.html">Liên Hệ</a></li>
+								</ul>
+							</div>
+						</div>
+					</nav><!-- Navigation /- -->
+					<div class="menu-search">
+						<div id="sb-search" class="sb-search">
+							<form>
+								<input class="sb-search-input" placeholder="Tìm khóa học..." type="text" value="" name="search" id="search" />
+								<button class="sb-search-submit"><i class="fa fa-search"></i></button>
+								<span class="sb-icon-search"></span>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!-- Container /- -->
+		</div><!-- Menu Block /- -->
+	</header><!-- Header /- -->
+	<!-- PageBanner -->
+	<div class="container-fluid no-padding pagebanner">
+		<div class="container">
+			<div class="pagebanner-content">
+				<h3>Làm Chủ Giọng Nói</h3>
+				<ol class="breadcrumb">
+					<li><a href="index.html">Trang Chủ</a></li>
+					<li>Làm Chủ Giọng Nói</li>
+				</ol>
+			</div>
+		</div>
+	</div><!-- PageBanner /- -->
+	<div class="container coursesdetail-section">
+		<div class="section-padding"></div>
+			<div class="row">
+				<div class="col-md-9 col-sm-8 event-contentarea">
+					<div class="courses-features">
+						<h2>1. Bạn sẽ làm được gì sau khóa học</h2>
+						<iframe allowfullscreen = true src="https://drive.google.com/file/d/1X9LF7QGZHwuUNprMU4ku80qxteHAsajU/preview" width="640" height="480" allow="autoplay"></iframe>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 event-sidebar">
+					<div class="coursesdetail-block">
+						<div class="courses-curriculum">
+							<h3 class="course-title">Nội Dung Khóa Học</h3>
+							<div class="menu-couses menu-couses-body">
+								<ul id="accordion" class="accordion">
+									<li>
+									  <div class="link"><i class="fa fa-code"></i>1.Bắt đầu<i class="fa fa-chevron-down"></i></div>
+									  <ul class="submenu">
+										<li><a href="#">1.Bạn sẽ làm được gì sau khóa học</a></li>
+										<li><a href="#">2.Tìm hiểu về HTML,CSS</a></li>
+										<li><a href="#">3.Làm quen với Dev tools</a></li>
+									  </ul>
+									</li>
+									<li>
+									  <div class="link"><i class="fa fa-code"></i>2.Làm quen với HTML<i class="fa fa-chevron-down"></i></div>
+									  <ul class="submenu">
+										<li><a href="#">5.Cấu trúc của 1 file HTML</a></li>
+										<li><a href="#">6.Làm quen với màn thử thách</a></li>
+										<li><a href="#">7.Ví dụ cấu trúc file HTML</a></li>
+									  </ul>
+									</li>
+									<li>
+									  <div class="link"><i class="fa fa-code"></i>3.Làm quen với CSS<i class="fa fa-chevron-down"></i></div>
+									  <ul class="submenu">
+										<li><a href="#">8.Sử dụng CSS trong HTML</a></li>
+										<li><a href="#">9.Thực hành sử dụng CSS internal</a></li>
+										<li><a href="#">10.ID và Class</a></li>
+									  </ul>
+									</li>
+									<li>
+									  <div class="link"><i class="fa fa-code"></i>4.Đệm,viền và khoảng lề<i class="fa fa-chevron-down"></i></div>
+									  <ul class="submenu">
+										<li><a href="#">11.Thuộc tính padding(đệm)</a></li>
+										<li><a href="#">12.Thực hành sử dụng padding #1</a></li>
+										<li><a href="#">13.Thuộc tính border(đường viền)</a></li>
+									  </ul>
+									</li>
+									<li>
+										<div class="link"><i class="fa fa-code"></i>5.Thuộc tính tạo nền<i class="fa fa-chevron-down"></i></div>
+										<ul class="submenu">
+										  <li><a href="#">14.Thuộc tính background-image</a></li>
+										  <li><a href="#">15.Sử dụng thuộc tính background-size</a></li>
+										  <li><a href="#">16.Thuộc tính background-origin</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="section-padding"></div>
+	</div>
+	<!-- Footer Main -->
+	<footer class="footer-main footer2 container-fluid no-padding">	
+		<!-- Container -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<aside class="ftr-widget about_widget">
+						<a class="footer-logo" href="#" title="Logo"><img alt="logo" src="images/logo.png">Edumax<span>Education of Best</span></a>
+						<p><span class="icon icon-Plaine"></span>Address : 44 New Design Street, Melbourne 005</p>
+						<p><span class="icon icon-Phone2"></span>Phone : <a title="01800433633" href="tel:+01800433633">(01) 800 433 633</a></p>
+						<p><span class="icon icon-Mail"></span>Email : <a title="info@Example.com" href="mailto:info@Example.com">info@Example.com</a></p>
+					</aside>
+				</div>
+				<div class="col-md-3 col-sm-6">	
+					<aside class="ftr-widget useful-llink">
+						<h3 class="widget-title">Liên Kết</h3>
+						<ul>
+							<li><a href="about-page.html" title="About">About</a></li>
+							<li><a href="contactus-page.html" title="Contact us">Contact us</a></li>
+						</ul>
+					</aside>
+				</div>
+				<!-- <div class="col-md-3 col-sm-6">
+					<aside class="ftr-widget flickr_widget">
+						<h3 class="widget-title">Our Flicker</h3>
+							<div class="flickr-box">
+								<img src="images/flick-rpost1.jpg" alt="flick-rpost1" width="62" height="62"/>
+								<p>New Science Research<span>05th May 2016</span></p>
+							</div>
+							<div class="flickr-box">
+								<img src="images/flick-rpost2.jpg" alt="flick-rpost2" width="62" height="62"/>
+								<p>How White Is Too White?<span>05th May 2016</span></p>
+							</div>
+							<div class="flickr-box">
+								<img src="images/flick-rpost3.jpg" alt="flick-rpost3" width="62" height="62"/>
+								<p>New York Schools Wonder:<span>05th May 2016</span></p>
+							</div>
+					</aside>
+				</div> -->
+				<div class="col-md-3 col-sm-6">
+					<aside class="ftr-widget newsletter_widget">
+						<h3 class="widget-title">News Letters</h3>
+						 <div class="input-group">
+							<input type="text" class="form-control" placeholder="Enter your email">
+							<span class="input-group-btn"><button class="btn" type="button" title="Go">Go</button></span>
+						</div>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li> 
+							<li><a href="#" title="Behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+							<li><a href="#" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+						</ul>
+					</aside>
+				</div>
+			</div>
+			<!-- Footer Bottom -->
+			<div class="footer-bottom col-md-12 col-sm-12 no-padding">
+				<div class="copyright no-padding">
+					<span>Copyright &copy; 2016. All Rights Reserved.</span>
+				</div>
+				<nav class="navbar ow-navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar2" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="navbar2" class="navbar-collapse collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="Home">Trang Chủ</a></li>
+							<li><a href="courses-page.html" title="Courses">Khóa Học</a></li>
+							<li><a href="about-page.html" title="About">Giới Thiệu</a></li>
+							<li><a href="contactus-page.html" title="Contact">Liên Hệ</a></li>
+							
+						</ul>
+					</div>
+				</nav>
+			</div><!-- Footer Bottom /- -->
+		</div><!-- Container /- -->
+	</footer><!-- Footer /- -->
+	
+	<!-- JQuery v1.11.3 -->	
+	<script src="js/jquery.min.js"></script>
+	<!--script src="js/jquery.knob.js"></script-->
+	
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script><!-- Bootstrap JS File v3.3.5 -->
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+	<script>
+		$(function() {
+			var Accordion = function(el, multiple) {
+				this.el = el || {};
+				this.multiple = multiple || false;
+		
+				// Variables privadas
+				var links = this.el.find('.link');
+				// Evento
+				links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+			}
+		
+			Accordion.prototype.dropdown = function(e) {
+				var $el = e.data.el;
+					$this = $(this),
+					$next = $this.next();
+		
+				$next.slideToggle();
+				$this.parent().toggleClass('open');
+		
+				if (!e.data.multiple) {
+					$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+				};
+			}	
+		
+			var accordion = new Accordion($('#accordion'), false);
+		});
+		</script>
+</body>
+</html>

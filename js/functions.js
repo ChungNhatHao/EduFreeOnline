@@ -487,5 +487,4 @@
 			$("#site-loader").css("display","none");
 		}
 	});
-
 })(jQuery);

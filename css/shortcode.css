@@ -1528,11 +1528,7 @@
 .courses-features{
 	display: inline-block;
 	width: 100%;
-	border: 1px solid #ececec;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 20px;
-	margin-bottom: 41px;
+	height: 100vh;
 }
 .courses-features > h3{
 	font-size: 15px;
