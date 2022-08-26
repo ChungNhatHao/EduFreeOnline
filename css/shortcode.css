@@ -1258,6 +1258,9 @@
 .coursesdetail-block img{
 	margin-bottom: 33px;
 }
+.coursesdetail-block iframe{
+	margin-bottom: 33px;
+}
 .course-title {
 	color: #333;
 	font-size: 22px;

@@ -1338,7 +1338,7 @@ a.footer-logo{
 
 /* ## Page Banner */
 .pagebanner {
-	background: url("images/pagebanner-courses.jpg"); 
+	background-color: #ffc722; 
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
@@ -1348,7 +1348,7 @@ a.footer-logo{
 	min-height: 300px;
 }
 .pagebanner::before {
-	background-color: rgba(0, 0, 0, 0.7);
+	/* background-color: rgba(0, 0, 0, 0.7); */
 	bottom: 0;
 	content: "";
 	display: inline-block;
@@ -1366,7 +1366,7 @@ a.footer-logo{
 	line-height: 26px;
 	font-family: 'Roboto Slab', serif;
 	font-weight: 700;
-	color: #fff;
+	color: #000;
 	display: inline-block;
 	float: left;
 	margin: 0;
@@ -1382,10 +1382,10 @@ a.footer-logo{
 .pagebanner .breadcrumb > li + li::before{
 	content: "-";
 	padding: 0 6px 0 2px;
-	color: #fff;
+	color:#000;
 }
 .pagebanner .breadcrumb li {
-	color: #fff;
+	color:#000;
 	font-size: 12px;
 	letter-spacing: 0.6px;
 	line-height: 26px;
@@ -1394,7 +1394,7 @@ a.footer-logo{
 	text-transform: capitalize;
 }
 .pagebanner .breadcrumb a{
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 

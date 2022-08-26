@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-	<title>Home -EduFree</title>
+	<title>Khóa Học - EduFree</title>
 	<!-- Standard Favicon -->
 	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
 	
@@ -71,7 +71,8 @@
 
 		.accordion {
 		  width: 100%;
-		  max-width: 360px;
+		  max-width: 500px;
+		  min-width: 360px;
 		  margin: 30px auto 20px;
 		  background: #FFF;
 		  -webkit-border-radius: 4px;
@@ -112,9 +113,9 @@
 		  font-size: 16px;
 		}
 
-		.accordion li.open .link { color: #b63b4d; }
+		.accordion li.open .link { color: #ffc722; }
 
-		.accordion li.open i { color: #b63b4d; }
+		.accordion li.open i { color: #ffc722; }
 
 		.accordion li.open i.fa-chevron-down {
 		  -webkit-transform: rotate(180deg);
@@ -150,6 +151,58 @@
 		.submenu a:hover {
 		  background: #b63b4d;
 		  color: #FFF;
+		}
+
+
+		.tab {
+		  overflow: hidden;
+		  border: 1px solid #ccc;
+		  background-color: #f1f1f1;
+		}
+
+		/* Style the buttons that are used to open the tab content */
+		.tab button {
+		  background-color: inherit;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  transition: 0.3s;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color: #ddd;
+		}
+
+		/* Create an active/current tablink class */
+		.tab button.active {
+		  background-color: #ccc;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		  display: none;
+		  padding: 6px 12px;
+		  border: 0px solid #ccc;
+		  border-top: none;
+		}
+
+		.video-wrapper {
+    		position: relative;
+    		padding-bottom: 75%;
+    		height: 0;
+    		overflow: hidden;
+		}
+
+		.video-wrapper iframe {
+    		position: absolute;
+			padding-top: 75px;
+    		top: 0px;
+    		left: 0;
+    		width: 100%;
+    		height: 100%;
 		}
 	</style>
 </head>
@@ -195,14 +248,7 @@
 									<span class="icon-bar"></span>
 								</button>
 								<a title="Logo" href="index.html" class="navbar-brand"><img src="images/logo.png" alt="logo"/>EduFree<span>Khóa Học Tốt Nhất - Miễn Phí</span></a>
-								<a title="Logo" href="#" class="navbar-brand">
-									<span class="ftr-widget newsletter_widget input-group input-group-btn"><button class="btn" type="button" title="Go">Đăng ký</button></span>
-								</a>
 								<a href="index.html" class="mobile-logo" title="Logo"><h3>EduFree</h3></a>
-								<a href="#" class="mobile-logo">
-									<span class="ftr-widget newsletter_widget input-group input-group-btn mobile-logo"><button class="btn" type="button" title="Go">Đăng ký</button></span>
-								</a>
-								
 							</div>
 						</div>
 						<div class="col-md-9">
@@ -211,27 +257,27 @@
 									<li class="dropdown active">
 										<a aria-expanded="false" aria-haspopup="true" href="index.html" role="button" class="dropdown-toggle" title="Home">Trang Chủ</a>
 										<i class="ddl-switch fa fa-angle-down"></i>
-										<ul class="dropdown-menu">
+										<!-- <ul class="dropdown-menu">
 											<li><a title="Home 2" href="home2.html">Home 2</a></li>
-										</ul>
+										</ul> -->
 									</li>
 									<li class="dropdown">
 										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Courses" href="courses-page.html">Khóa Học</a>
 										<i class="ddl-switch fa fa-angle-down"></i>
-										<ul class="dropdown-menu">
+										<!-- <ul class="dropdown-menu">
 											<li><a title="Courses Detail" href="coursesdetails-page.html">Courses Detail</a></li>
-										</ul>
+										</ul> -->
 									</li>
-									<li><a title="Event" href="events-page.html">Sự Kiện</a></li>
+									<li><a title="Event" href="#">Sự Kiện</a></li>
 									<li><a title="About" href="about-page.html">Giới Thiệu</a></li>
 									<li class="dropdown">
-										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Blog" href="blog-page.html">Blog</a>
+										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Blog" href="#">Blog</a>
 										<i class="ddl-switch fa fa-angle-down"></i>
-										<ul class="dropdown-menu">
+										<!-- <ul class="dropdown-menu">
 											<li><a title="Blog Post" href="blogpost-page.html">Blog Post</a></li>
-										</ul>
+										</ul> -->
 									</li>
-									<li class="dropdown">
+									<!-- <li class="dropdown">
 										<a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Pages" href="#">Trang</a>
 										<i class="ddl-switch fa fa-angle-down"></i>
 										<ul class="dropdown-menu">
@@ -239,7 +285,7 @@
 											<li><a title="Course Detail" href="coursesdetails-page.html">Course Detail</a></li>
 											<li><a title="BlogPost" href="blogpost-page.html">BlogPost</a></li>
 										</ul>
-									</li>
+									</li> -->
 									<li><a title="Contact" href="contactus-page.html">Liên Hệ</a></li>
 								</ul>
 							</div>
@@ -274,9 +320,31 @@
 		<div class="section-padding"></div>
 			<div class="row">
 				<div class="col-md-9 col-sm-8 event-contentarea">
-					<div class="courses-features">
-						<h2>1. Bạn sẽ làm được gì sau khóa học</h2>
-						<iframe allowfullscreen = true src="https://drive.google.com/file/d/1X9LF7QGZHwuUNprMU4ku80qxteHAsajU/preview" width="640" height="480" allow="autoplay"></iframe>
+					<div class="coursesdetail-block">
+						<div id="1.1" class="tabcontent video-wrapper">
+							<h2>1. Bạn sẽ làm được gì sau khóa học</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/1X9LF7QGZHwuUNprMU4ku80qxteHAsajU/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+						<div id="1.2" class="tabcontent video-wrapper">
+							<h2>2.Tìm hiểu về HTML,CSS</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/1l4A2vL72U70vxOH5vqN16Iyyi5v1tdOR/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+						<div id="1.3" class="tabcontent video-wrapper">
+							<h2>3.Làm quen với Dev tools</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/1E-O81jLExZAdYj_-wb75FDvUyPBkPYZ7/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+						<div id="2.1" class="tabcontent video-wrapper">
+							<h2>5.Cấu trúc của 1 file HTML</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/11gBXAEOaxe07XuyZ13n_rMCA_DQzqMIv/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+						<div id="2.2" class="tabcontent video-wrapper">
+							<h2>6.Làm quen với màn thử thách</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/16tYTVgikLP3CT5O6CeD1ZwHjz8f_2sWg/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
+						<div id="2.3" class="tabcontent video-wrapper">
+							<h2>7.Ví dụ cấu trúc file HTML</h2>
+							<iframe frameborder="0" allowfullscreen = true src="https://drive.google.com/file/d/1pk-obM09sUOf7sqrTF7Z3eK0S5yn7kAE/preview" width="640" height="480" allow="autoplay"></iframe>
+						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-4 event-sidebar">
@@ -287,42 +355,42 @@
 								<ul id="accordion" class="accordion">
 									<li>
 									  <div class="link"><i class="fa fa-code"></i>1.Bắt đầu<i class="fa fa-chevron-down"></i></div>
-									  <ul class="submenu">
-										<li><a href="#">1.Bạn sẽ làm được gì sau khóa học</a></li>
-										<li><a href="#">2.Tìm hiểu về HTML,CSS</a></li>
-										<li><a href="#">3.Làm quen với Dev tools</a></li>
+									  <ul class="submenu tab">
+										<li><button class="tablinks  active" onclick="openvideoCouse(event, '1.1')">1.Bạn sẽ làm được gì sau khóa học</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '1.2')">2.Tìm hiểu về HTML,CSS</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '1.3')">3.Làm quen với Dev tools</button></li>
 									  </ul>
 									</li>
 									<li>
 									  <div class="link"><i class="fa fa-code"></i>2.Làm quen với HTML<i class="fa fa-chevron-down"></i></div>
-									  <ul class="submenu">
-										<li><a href="#">5.Cấu trúc của 1 file HTML</a></li>
-										<li><a href="#">6.Làm quen với màn thử thách</a></li>
-										<li><a href="#">7.Ví dụ cấu trúc file HTML</a></li>
+									  <ul class="submenu tab">
+										<li><button class="tablinks" onclick="openvideoCouse(event, '2.1')">5.Cấu trúc của 1 file HTML</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '2.2')">6.Làm quen với màn thử thách</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '2.3')">7.Ví dụ cấu trúc file HTML</button></li>
 									  </ul>
 									</li>
 									<li>
 									  <div class="link"><i class="fa fa-code"></i>3.Làm quen với CSS<i class="fa fa-chevron-down"></i></div>
-									  <ul class="submenu">
-										<li><a href="#">8.Sử dụng CSS trong HTML</a></li>
-										<li><a href="#">9.Thực hành sử dụng CSS internal</a></li>
-										<li><a href="#">10.ID và Class</a></li>
+									  <ul class="submenu tab">
+										<li><button class="tablinks" onclick="openvideoCouse(event, '3.1')">8.Sử dụng CSS trong HTML</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '3.2')">9.Thực hành sử dụng CSS internal</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '3.3')">10.ID và Class</button></li>
 									  </ul>
 									</li>
 									<li>
 									  <div class="link"><i class="fa fa-code"></i>4.Đệm,viền và khoảng lề<i class="fa fa-chevron-down"></i></div>
-									  <ul class="submenu">
-										<li><a href="#">11.Thuộc tính padding(đệm)</a></li>
-										<li><a href="#">12.Thực hành sử dụng padding #1</a></li>
-										<li><a href="#">13.Thuộc tính border(đường viền)</a></li>
+									  <ul class="submenu tab">
+										<li><button class="tablinks" onclick="openvideoCouse(event, '4.1')">11.Thuộc tính padding(đệm)</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '4.2')">12.Thực hành sử dụng padding #1</button></li>
+										<li><button class="tablinks" onclick="openvideoCouse(event, '4.3')">13.Thuộc tính border(đường viền)</button></li>
 									  </ul>
 									</li>
 									<li>
 										<div class="link"><i class="fa fa-code"></i>5.Thuộc tính tạo nền<i class="fa fa-chevron-down"></i></div>
-										<ul class="submenu">
-										  <li><a href="#">14.Thuộc tính background-image</a></li>
-										  <li><a href="#">15.Sử dụng thuộc tính background-size</a></li>
-										  <li><a href="#">16.Thuộc tính background-origin</a></li>
+										<ul class="submenu tab">
+										  <li><button class="tablinks" onclick="openvideoCouse(event, '5.1')">14.Thuộc tính background-image</button></li>
+										  <li><button class="tablinks" onclick="openvideoCouse(event, '5.2')">15.Sử dụng thuộc tính background-size</button></li>
+										  <li><button class="tablinks" onclick="openvideoCouse(event, '5.3')">16.Thuộc tính background-origin</button></li>
 										</ul>
 									</li>
 								</ul>
@@ -339,15 +407,21 @@
 		<!-- Container -->
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-sm-6">
+				<div class="col-md-6 col-sm-6">
 					<aside class="ftr-widget about_widget">
-						<a class="footer-logo" href="#" title="Logo"><img alt="logo" src="images/logo.png">Edumax<span>Education of Best</span></a>
-						<p><span class="icon icon-Plaine"></span>Address : 44 New Design Street, Melbourne 005</p>
-						<p><span class="icon icon-Phone2"></span>Phone : <a title="01800433633" href="tel:+01800433633">(01) 800 433 633</a></p>
-						<p><span class="icon icon-Mail"></span>Email : <a title="info@Example.com" href="mailto:info@Example.com">info@Example.com</a></p>
+						<a class="footer-logo" href="#" title="Logo"><img alt="logo" src="images/logo.png">EduFree<span>Khóa Học Tốt Nhất - Miễn Phí</span></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li> 
+							<li><a href="#" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="#" title="Rss"><i class="fa fa-rss"></i></a></li>
+						</ul>
+						<p><span class="icon icon-Plaine"></span> Địa Chỉ : P503, 20 Phan Đình Giót, P.2, Q. Tân Bình</p>
 					</aside>
 				</div>
-				<div class="col-md-3 col-sm-6">	
+				<!-- <div class="col-md-3 col-sm-6">	
 					<aside class="ftr-widget useful-llink">
 						<h3 class="widget-title">Liên Kết</h3>
 						<ul>
@@ -355,7 +429,7 @@
 							<li><a href="contactus-page.html" title="Contact us">Contact us</a></li>
 						</ul>
 					</aside>
-				</div>
+				</div> -->
 				<!-- <div class="col-md-3 col-sm-6">
 					<aside class="ftr-widget flickr_widget">
 						<h3 class="widget-title">Our Flicker</h3>
@@ -373,7 +447,7 @@
 							</div>
 					</aside>
 				</div> -->
-				<div class="col-md-3 col-sm-6">
+				<!-- <div class="col-md-3 col-sm-6">
 					<aside class="ftr-widget newsletter_widget">
 						<h3 class="widget-title">News Letters</h3>
 						 <div class="input-group">
@@ -388,12 +462,12 @@
 							<li><a href="#" title="Dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
 						</ul>
 					</aside>
-				</div>
+				</div> -->
 			</div>
 			<!-- Footer Bottom -->
 			<div class="footer-bottom col-md-12 col-sm-12 no-padding">
 				<div class="copyright no-padding">
-					<span>Copyright &copy; 2016. All Rights Reserved.</span>
+					<span>Copyright &copy; 2022. All Rights Reserved.</span>
 				</div>
 				<nav class="navbar ow-navigation">
 					<div class="navbar-header">
@@ -406,11 +480,9 @@
 					</div>
 					<div id="navbar2" class="navbar-collapse collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="index.html" title="Home">Trang Chủ</a></li>
-							<li><a href="courses-page.html" title="Courses">Khóa Học</a></li>
-							<li><a href="about-page.html" title="About">Giới Thiệu</a></li>
-							<li><a href="contactus-page.html" title="Contact">Liên Hệ</a></li>
-							
+							<li><span><i class="fa fa-mobile" aria-hidden="true"></i>(84) - 969929983 </span></li>
+							<li><span>Emailus: haocn@mor.com.vn</span></li>
+							<li><span>Design by CNH</span></li>
 						</ul>
 					</div>
 				</nav>
@@ -456,6 +528,29 @@
 		
 			var accordion = new Accordion($('#accordion'), false);
 		});
+		</script>
+
+		<script>
+			function openvideoCouse(evt, id) {
+		  // Declare all variables
+		  var i, tabcontent, tablinks;
+
+		  // Get all elements with class="tabcontent" and hide them
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+	  
+		  // Get all elements with class="tablinks" and remove the class "active"
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  
+		  // Show the current tab, and add an "active" class to the button that opened the tab
+		  	document.getElementById(id).style.display = "block";
+		  	evt.currentTarget.className += " active";
+		}
 		</script>
 </body>
 </html>
